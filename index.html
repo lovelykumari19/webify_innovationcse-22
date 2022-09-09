@@ -45,6 +45,27 @@
             width: 200px;
             height: 280px;
         }
+        @media screen and (max-width: 992px) {
+            .t {
+              width: 50%;
+            }
+          }
+        @media screen and (max-width: 600px) {
+            .t {
+              width: 100%;
+            }
+          }
+        @media screen and(max-width: 550px){
+            .title{
+                width: 100%;
+            }
+        }
+        @media screen and(max-width: 350px){
+            .title{
+                display: block;
+            }
+    
+        }
         .sort{
             border: solid 2px rosybrown  ;
             border-radius: 50px;
@@ -102,9 +123,9 @@
     
 </head>
 <body>
-    <h1>Gallery   <i class="fa fa-picture-o fa-fade" style="font-size:30px;color:rgb(128, 49, 49)"></i> </h1>
-        <h2>Know About your Favourite Anime   <i class="fa fa-heart fa-spin" style="font-size:24px"></i> <input type="text" id="the-filter" placeholder="Search For..."/> <button class="sort" onclick="sortList()">Sort &nbsp;&nbsp;&nbsp;<i class="fa fa-sort" style="font-size:20px"></i></button> </h2>
-        <i class="fa-solid fa-circle-plus fa-beat"></i>
+    <h1 style="text-align:center" class="title">Gallery   <i class="fa fa-picture-o fa-fade" style="font-size:30px;color:rgb(128, 49, 49)"></i> </h1>
+        <h2 class="title">Know About your Favourite Anime   <i class="fa fa-heart fa-spin" style="font-size:24px"></i> <input type="text" id="the-filter" placeholder="Search For..."/> <button class="sort" onclick="sortList()">Sort &nbsp;&nbsp;&nbsp;<i class="fa fa-sort" style="font-size:20px"></i></button> </h2>
+        
         <div class="main" id="the-list">
             
                 <li>Momo<div class="t">
